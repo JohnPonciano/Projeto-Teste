@@ -1,18 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles2.css">
+    <title>API</title>
 </head>
 <body>
-    <div class="card shadow" style="width: 18rem;">
-        <h5 id='name'></h5>
-        <div class="card-body">
-            <h5 id="gender" class="card-title"></h5>
-            <p id="birth_year" class="card-text"></p>
+    <h1>https://swapi.co/api/people/</h1>
+    <div class="panel">
+        <div class="get" onclick="getData()">Carregar Dados</div>
+        <div class="input-bar">
+            <select id="method">
+                <option value="GET">GET</option>
+            </select>
+            <input type="text" value="https://swapi.co/api/people/" placeholder="Enter request URL">
+        </div>
+        <div class="container">
+            <div class="content">
+                <code id="results"></code>
+            </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>

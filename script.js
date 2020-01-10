@@ -1,23 +1,16 @@
 const url='https://swapi.co/api/people/'
 
+const getData = async () => {
+    const url = document.querySelector(['input']),
+    code = document.querySelector('#results'),
+    select = document.querySelector('#method'),
+    method = select.value
 
-function readJson() {
-    fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Erro HTTP: " + response.status);
-            }
-            return response.json();
-        })
-        .then(json => {
-            this.response = json;
-            document.getElementById('nome').src = response.data.nome;
-            document.getElementById('gender').innerHTML = response.data.first_name;
-            document.getElementById('birth_year').innerHTML = response.data.last_name;
-        })
-        .catch(function () {
-            this.dataError = true;
-        })
+    if(url.value) {
+        code.innerHTML = await fetch(url.value, { method :  method })
+            .then(res => res.text())
+            .catch(error => error)
+    } else {
+        code.innerHTML = url
+    }
 }
-
-readJson();
