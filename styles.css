@@ -1,0 +1,56 @@
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #fff;
+}
+
+h2.title{
+    margin-top: 20px;
+    text-align: center;
+}
+
+button.btn.btn-danger.acessorios{
+margin-left: 70%;
+}
+
+button.btn.btn-danger.vinhos{
+    margin-left: 5px;
+    margin-bottom: 15px;
+
+}
+
+.navbar.custom {
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  ul.navbar-nav.left-menu{
+      margin-right: 35px;
+  }
+
+
+  footer{
+      background-color: #212529;
+      color: whitesmoke;
+      
+  }
+  div.col-xs-11.col-sm-3.col-md-3{
+        margin-top: 30px;
+  }
+  div.col-xs-10.col-sm-2.col-md-2{
+      margin-top: 20px;
+  }
+
+  p.footer-text{
+      margin-top: 15px;
+      justify-content:left ;
+      font-size: 13px;
+      
+  }
+
+  div.footer-all{
+      margin-left: 20px;
+      margin-top: 30px;
+      
+  }
+
+  
